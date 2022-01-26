@@ -1,4 +1,4 @@
-package com.geektech.countrycontinents.UI.Adapter;
+package com.geektech.countrycontinents.ui.fragments;
 
 import android.os.Bundle;
 
@@ -11,10 +11,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.geektech.countrycontinents.Data.Model;
-import com.geektech.countrycontinents.UI.Adapter.Adapter.Adapter;
-import com.geektech.countrycontinents.Interfaces.OnClick;
+import com.geektech.countrycontinents.data.Model;
+import com.geektech.countrycontinents.interfaces.OnClick;
 import com.geektech.countrycontinents.R;
+import com.geektech.countrycontinents.adapter.Adapter;
 import com.geektech.countrycontinents.databinding.FragmentCountryFragmentsBinding;
 
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public class CountryFragments extends Fragment implements OnClick {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        binding = FragmentCountryFragmentsBinding.inflate(LayoutInflater.from(getContext()), container, false);
+        binding = FragmentCountryFragmentsBinding.inflate(LayoutInflater.from(requireContext()), container, false);
         return binding.getRoot();
 
     }
@@ -82,8 +82,8 @@ public class CountryFragments extends Fragment implements OnClick {
                 twoList.add(new Model("Киргизия", R.drawable.ic_us_3x));
                 break;
             case 6:
-                Toast.makeText(requireActivity(),"Додик\uD83E\uDD21", Toast.LENGTH_SHORT).show();
-                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container,new DodicFragments()).commit();
+                Toast.makeText(requireActivity(), "Додик\uD83E\uDD21", Toast.LENGTH_SHORT).show();
+                requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, new DodicFragments()).commit();
                 break;
 
         }

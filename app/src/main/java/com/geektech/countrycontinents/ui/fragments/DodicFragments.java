@@ -1,4 +1,4 @@
-package com.geektech.countrycontinents.UI.Adapter;
+package com.geektech.countrycontinents.ui.fragments;
 
 import android.os.Bundle;
 

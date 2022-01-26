@@ -1,6 +1,4 @@
-package com.geektech.countrycontinents.Data;
-
-import android.provider.ContactsContract;
+package com.geektech.countrycontinents.data;
 
 public class Model {
     private String name;

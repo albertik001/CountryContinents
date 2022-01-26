@@ -4,8 +4,9 @@
     android:layout_width="match_parent"
     android:background="@color/black"
     android:layout_height="match_parent"
-    tools:context=".UI.Adapter.DodicFragments">
+    tools:context=".ui.fragments.DodicFragments">
     <ImageView
+        android:scaleType="fitXY"
         android:id="@+id/image_cloun"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

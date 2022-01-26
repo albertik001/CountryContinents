@@ -1,4 +1,4 @@
-package com.geektech.countrycontinents.UI.Adapter;
+package com.geektech.countrycontinents.ui.fragments;
 
 import android.os.Bundle;
 
@@ -10,10 +10,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.geektech.countrycontinents.Data.Model;
-import com.geektech.countrycontinents.UI.Adapter.Adapter.Adapter;
-import com.geektech.countrycontinents.Interfaces.OnClick;
+import com.geektech.countrycontinents.data.Model;
+import com.geektech.countrycontinents.interfaces.OnClick;
 import com.geektech.countrycontinents.R;
+import com.geektech.countrycontinents.adapter.Adapter;
 import com.geektech.countrycontinents.databinding.FragmentCountryBinding;
 
 import java.util.ArrayList;
@@ -48,7 +48,7 @@ public class ContinentFragments extends Fragment implements OnClick {
         list.add(new Model("Южная Америка", R.drawable.ic_ceu, 3));
         list.add(new Model("Африка", R.drawable.ic_csa, 4));
         list.add(new Model("Австралия", R.drawable.ic_cas, 5));
-        list.add(new Model("Антарктида", R.drawable.ic_coc, 6));
+        list.add(new Model("Анта рктида", R.drawable.ic_coc, 6));
 
     }
 
